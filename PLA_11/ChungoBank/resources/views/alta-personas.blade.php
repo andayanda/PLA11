@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chungo Bank</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/app.css')}}">
-</head>
-</head>
-<body>
+@extends('layout')
+@section('contenido')
 	<div class='contenedor'>
-		<header>
-			<img src="assets/img/chungobank.png">
-			<h4>Chungobank Investments & Trusts</h4>
-		</header>
-		<nav>
-			<div><a href="/gestion">Gestión comercial</a></div>
-			<div><a href="/alta-mto-puntos">Cuenta Puntos</a> | 
-			<a href="/alta-personas">Alta personas</a></div>
-		</nav>
-		<h4 class='center'>Alta Personas</h4>
-		<section>
+	
 			<form id='formulario'>
 				<label>NIF:</label>
 				<input type="text" id="nif">
@@ -48,7 +31,6 @@
 				<input type="button" id="salir" value='Abandonar' onclick="window.location.href = 'gestion.html'">
 				<span id='mensajes'>Zona de mensajes</span>
 			</form>
-		</section>
 	</div>
-</body>
-</html>
+			@endsection
+	

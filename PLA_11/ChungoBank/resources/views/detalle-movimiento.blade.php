@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chungo Bank</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/app.css')}}">
-</head>
+
+	@extends('layout')
+	@section('contenido')
 	
-	<style type="text/css">
-		input#altamov {float:right;}
-	</style>
-</head>
-<body>
-	<div class='contenedor'>
-		<header>
-			<img src="assets/img/chungobank.png">
-			<h4>Chungobank Investments & Trusts</h4>
-		</header>
-		<nav>
-			<div><a href="gestion.html">Gestión comercial</a></div>
-			<div><a href="alta-mto-puntos.html">Cuenta Puntos</a> | 
-			<a href="alta-personas.html">Alta personas</a></div>
-		</nav>
-		<h4 class='center'>Detalle movimiento Cta Puntos</h4>
-		<section>
+	<div class='contenedor'>			
+	
 			<form id='formulario_mov'>
 				<label>CONTRATO PUNTOS:</label>
 				<input type="text" id="entidad" disabled>
@@ -58,7 +39,5 @@
 				<input type="button" id="salir" value='Abandonar' onclick="window.location.href = 'consulta-movimientos.html'">
 				<span id='mensajes'>Zona de mensajes</span>
 			</form>
-		</section>
-	</div>
-</body>
-</html>
+		
+		@endsection	

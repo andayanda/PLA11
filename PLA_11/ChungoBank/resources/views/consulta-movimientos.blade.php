@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chungo Bank</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/cb.css">
-	<style type="text/css">
-		input#altamov {float:right;}
-	</style>
-</head>
-<body>
+@extends('layout')
+@section('contenido')
 	<div class='contenedor'>
-		<header>
-			<img src="assets/img/chungobank.png">
-			<h4>Chungobank Investments & Trusts</h4>
-		</header>
-		<nav>
-			<div><a href="gestion.html">Gestión comercial</a></div>
-			<div><a href="alta-mto-puntos.html">Cuenta Puntos</a> | 
-			<a href="alta-personas.html">Alta personas</a></div>
-		</nav>
-		<h4 class='center'>Consulta movimientos Cta Puntos</h4>
-		<section>
+	
+	
 			<form id='formulario_mov'>
 				<label>CONTRATO PUNTOS:</label>
 				<input type="text" id="entidad" disabled>
@@ -63,10 +45,7 @@
 				<input type="button" id="detalle" value='Detalle'   onclick="window.location.href = 'detalle-movimiento.html'">
 				<input type="button" id="imprimir" value='Imprimir'>
 				<input type="button" id="salir" value='Abandonar'  onclick="window.location.href = 'alta-mto-puntos.html'">
-				<input type="button" id="altamov" value='Alta movimiento' onclick="window.location.href = 'alta-movimientos.html'">
+				<input type="button" style="float:right;" id="altamov" value='Alta movimiento' onclick="window.location.href = 'alta-movimientos.html'">
 				<span id='mensajes'>Zona de mensajes</span>
 			</form>
-		</section>
-	</div>
-</body>
-</html>
+			@endsection

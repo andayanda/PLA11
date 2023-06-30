@@ -8,6 +8,7 @@ class DetalleController extends Controller
 {
     //
     public function detalle(){
-        return view('detalle-movimiento');
+        $datos['titulo']= 'Detalle movimiento Cta Puntos';
+        return view('detalle-movimiento')->with($datos);
     }
 }

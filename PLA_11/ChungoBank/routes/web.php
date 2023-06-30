@@ -3,6 +3,7 @@
 use App\Http\Controllers\AltaMovimientooController;
 use App\Http\Controllers\AltaMtoController;
 use App\Http\Controllers\AltaPersonaController;
+use App\Http\Controllers\ConsultaController;
 use App\Http\Controllers\DetalleController;
 use App\Http\Controllers\GestionController;
 use Illuminate\Support\Facades\Route;

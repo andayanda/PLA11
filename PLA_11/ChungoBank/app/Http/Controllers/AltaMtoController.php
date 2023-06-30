@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class AltaMtoController extends Controller
 {
     public function altaMto(){
-        return view('alta-mto-puntos');
+        
+        $datos['titulo']= 'Alta y Mantenimiento Cta Puntos';
+        return view('alta-mto-puntos')->with($datos);
     }
 }
